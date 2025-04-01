@@ -1,6 +1,6 @@
 import React from "react";
 import { Mail, Phone, Linkedin } from "lucide-react";
-import logo from "./assets/logo.png"; // ✅ Correct path if logo is in src/assets
+import logo from "./logo.png"; // ✅ Correct path since logo.png is in /src
 
 export default function SummitTrustWebsite() {
   return (
@@ -24,4 +24,37 @@ export default function SummitTrustWebsite() {
           <h2>New Initiatives</h2>
           <ul>
             <li>Transparent, ethical banking practices</li>
-            <li>Revamped customer service experience</
+            <li>Revamped customer service experience</li>
+            <li>Modern logo and website redesign</li>
+            <li>Financial education via social media</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Upcoming Presentation</h2>
+          <p>Join us in late April for our final strategic reveal. More details to come! Be the first to hear — sign up below.</p>
+          <input placeholder="Your email" style={{ padding: '0.5rem', width: '70%' }} />
+          <button style={{ padding: '0.5rem', marginLeft: '0.5rem' }}>Notify Me</button>
+        </div>
+      </section>
+
+      <section style={{ marginTop: '3rem', textAlign: 'center' }}>
+        <h2>Meet Our Team</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
+          {['Zachary Dornoff', 'Colin Gastright', 'Kristian Martinovic', 'Jeff Eveland'].map((name, i) => (
+            <div key={i} style={{ backgroundColor: '#fff', padding: '1rem', borderRadius: '8px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}>
+              <strong>{name}</strong><br />
+              <span>{['Marketing & Engagement', 'Client Experience', 'Chief Financial Officer', 'Chief Integrity Officer'][i]}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <footer style={{ textAlign: 'center', marginTop: '3rem', fontSize: '0.9rem', color: '#666' }}>
+        <p>&copy; 2025 Summit Trust & Financial. All rights reserved.</p>
+        <div style={{ marginTop: '0.5rem' }}>
+          <span>Email: zdornoff@summittrust.com | Phone: (555) 918-2043</span>
+        </div>
+      </footer>
+    </div>
+  );
+}
