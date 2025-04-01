@@ -1,13 +1,20 @@
 import React from "react";
 import { Mail, Phone, Linkedin } from "lucide-react";
+import logo from "../logo.png"; // ✅ Import the logo so Vite can bundle it
 
 export default function SummitTrustWebsite() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
       <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <img
+          src={logo}
+          alt="Summit Trust & Financial Logo"
+          style={{ width: '100px', height: '100px', objectFit: 'contain', marginBottom: '1rem' }}
+        />
         <h1>Summit Trust & Financial</h1>
         <p>Rooted in Lexington. Reimagined for Tomorrow.</p>
       </header>
+
       <section style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
         <div>
           <h2>Our Mission</h2>
@@ -29,6 +36,7 @@ export default function SummitTrustWebsite() {
           <button style={{ padding: '0.5rem', marginLeft: '0.5rem' }}>Notify Me</button>
         </div>
       </section>
+
       <section style={{ marginTop: '3rem', textAlign: 'center' }}>
         <h2>Meet Our Team</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
@@ -40,6 +48,7 @@ export default function SummitTrustWebsite() {
           ))}
         </div>
       </section>
+
       <footer style={{ textAlign: 'center', marginTop: '3rem', fontSize: '0.9rem', color: '#666' }}>
         <p>&copy; 2025 Summit Trust & Financial. All rights reserved.</p>
         <div style={{ marginTop: '0.5rem' }}>
