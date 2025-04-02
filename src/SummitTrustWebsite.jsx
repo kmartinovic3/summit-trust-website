@@ -1,14 +1,13 @@
 import React from "react";
 import { Mail, Phone, Linkedin } from "lucide-react";
-import logo from "./logo.png"; // ✅ Ensure logo.png is in /src
 
 export default function SummitTrustWebsite() {
   return (
     <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
       <header style={{ textAlign: "center", marginBottom: "2rem" }}>
         <img
-          src={logo}
-          alt="Summit Trust & Financial logo"
+          src="/logo.png"
+          alt="Summit Trust & Financial Logo"
           style={{
             width: "120px",
             height: "auto",
