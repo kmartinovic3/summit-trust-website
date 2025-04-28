@@ -114,7 +114,15 @@ export default function SummitTrustWebsite() {
         <p>&copy; 2025 Summit Trust & Financial. All rights reserved.</p>
         <p>
           <Mail size={16} style={{ verticalAlign: "middle" }} /> zdornoff@summittrust.com {" | "}
-          <Phone size={16} style={{ verticalAlign: "middle" }} /> (555) 918-2043
+          <Phone size={16} style={{ verticalAlign: "middle" }} /> (555) 918-2043 {" | "}
+          <a
+            href="https://www.instagram.com/summittrustlex?igsh=NGZmZGNkYzdtd3Vm"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#2d4a73", textDecoration: "none", marginLeft: "6px" }}
+          >
+            📸 Instagram
+          </a>
         </p>
       </footer>
     </div>
